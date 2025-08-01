@@ -797,6 +797,42 @@ p {
     align-items: center;
 }
 
+.founder-image {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.founder-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-100);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: var(--space-6);
+    transition: all 0.3s ease;
+}
+
+.founder-photo:hover {
+    transform: scale(1.05);
+    border-color: var(--primary-300);
+    box-shadow: var(--shadow-xl);
+}
+
+.founder-caption h3 {
+    color: var(--neutral-900);
+    margin-bottom: var(--space-2);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.founder-caption p {
+    color: var(--primary-600);
+    font-weight: 500;
+    margin: 0;
+}
+
 /* Values Section */
 .values-section {
     padding: var(--space-24) 0;
@@ -1684,6 +1720,217 @@ p {
     line-height: 1.6;
 }
 
+/* Crisis Section */
+.crisis-section {
+    padding: var(--space-24) 0;
+    background: var(--neutral-50);
+}
+
+.crisis-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.crisis-text p {
+    margin-bottom: var(--space-6);
+    color: var(--neutral-600);
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+
+/* Profile Section */
+.profile-section {
+    padding: var(--space-24) 0;
+}
+
+.profile-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-card {
+    background: white;
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--neutral-200);
+}
+
+.profile-card h3 {
+    margin-bottom: var(--space-6);
+    color: var(--primary-600);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.profile-item {
+    padding: var(--space-4);
+    background: var(--neutral-50);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--primary-500);
+}
+
+.profile-item strong {
+    color: var(--neutral-900);
+    display: block;
+    margin-bottom: var(--space-2);
+}
+
+.profile-item ul {
+    margin-top: var(--space-2);
+    padding-left: var(--space-4);
+}
+
+.profile-item li {
+    color: var(--neutral-600);
+    margin-bottom: var(--space-1);
+}
+
+/* Locations Section */
+.locations-section {
+    padding: var(--space-24) 0;
+    background: var(--neutral-50);
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-8);
+    margin-top: var(--space-12);
+}
+
+.location-card {
+    background: white;
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--neutral-200);
+}
+
+.location-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-300);
+}
+
+.location-card h3 {
+    margin-bottom: var(--space-4);
+    color: var(--primary-600);
+    font-size: 1.25rem;
+}
+
+.location-card p {
+    margin-bottom: var(--space-3);
+    color: var(--neutral-600);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.location-card i {
+    color: var(--primary-600);
+    width: 16px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: var(--space-24) 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--space-8);
+    margin-top: var(--space-12);
+}
+
+.testimonial-card {
+    background: white;
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--neutral-200);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-300);
+}
+
+.testimonial-content {
+    margin-bottom: var(--space-6);
+}
+
+.testimonial-content p {
+    color: var(--neutral-600);
+    line-height: 1.7;
+    font-style: italic;
+    font-size: 1.125rem;
+}
+
+.testimonial-author {
+    border-top: 1px solid var(--neutral-200);
+    padding-top: var(--space-4);
+}
+
+.testimonial-author strong {
+    display: block;
+    color: var(--neutral-900);
+    font-size: 1.125rem;
+    margin-bottom: var(--space-1);
+}
+
+.testimonial-author span {
+    color: var(--neutral-500);
+    font-size: 0.875rem;
+}
+
+/* Mission Statement Section */
+.mission-statement-section {
+    padding: var(--space-24) 0;
+    background: var(--primary-50);
+}
+
+.mission-statement-section .mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission-statement-section h2 {
+    margin-bottom: var(--space-6);
+    color: var(--primary-600);
+}
+
+.mission-statement-section p {
+    color: var(--neutral-600);
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+
+.job-note {
+    background: var(--warning);
+    color: var(--neutral-900);
+    padding: var(--space-4);
+    border-radius: var(--radius);
+    margin-top: var(--space-6);
+    border-left: 4px solid var(--accent-600);
+}
+
+.job-note p {
+    margin: 0;
+    font-weight: 500;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
@@ -1733,6 +1980,80 @@ p {
         grid-template-columns: 1fr;
     }
     
+    .mission-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .founder-photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-preview {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .culture-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .application-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .timeline-item::before {
+        display: none;
+    }
+    
+    .timeline-year {
+        margin-bottom: var(--space-4);
+        margin-right: 0;
+    }
+    
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2rem; }
     h3 { font-size: 1.5rem; }
@@ -1751,6 +2072,10 @@ p {
         font-size: 2rem;
     }
     
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
     .btn {
         padding: var(--space-2) var(--space-4);
         font-size: 0.875rem;
@@ -1758,6 +2083,36 @@ p {
     
     .services-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        padding: var(--space-6);
+    }
+    
+    .job-card {
+        padding: var(--space-6);
+    }
+    
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+    }
+    
+    .contact-card {
+        padding: var(--space-6);
+    }
+    
+    .faq-question {
+        padding: var(--space-4);
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+    
+    .faq-answer {
+        padding: 0 var(--space-4) var(--space-4);
     }
 }
 
